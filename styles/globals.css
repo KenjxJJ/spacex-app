@@ -14,3 +14,137 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+main.home {
+  background-color: #ccc;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+main.home>* {
+  flex: 1 1 100%;
+}
+
+footer {
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 2.4rem 1.3rem;
+  text-align: center;
+}
+
+main>h1 {
+  margin-top: 0%;
+}
+
+/*  Filter Component */
+.filter-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px !important;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.4rem 0;
+}
+
+h2,
+h3 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid;
+
+}
+
+h3 {
+  text-align: center;
+}
+
+.launch-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.launch-year {
+  justify-content: space-between;
+}
+
+.launch-section>.btn,
+.launch-section>span.btn {
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  padding: .4rem .5rem;
+  margin: .5rem .4rem;
+  background-color: #c4e09a;
+  width: 4.6rem;
+  border: none;
+  font-weight: 500;
+}
+
+.launch-section>.btn:active,
+.launch-section>.btn:hover {
+  background-color: #7db70a;
+}
+
+
+.launch-success {
+  justify-content: space-between !important;
+}
+
+/* SpaceXMission Page */
+
+.space-mission,
+.filter-card {
+  margin: 24px 15px;
+  padding: 15px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 230px;
+}
+
+.image-container {
+  background-color: #ccc;
+}
+
+.space-mission:last-child {
+  margin-bottom: 0px;
+}
+
+
+img {
+  object-fit: fill;
+  width: 100% !important;
+  height: 250px !important;
+}
+
+.mission-name {
+  color: blue;
+  font-weight: 600;
+}
+
+.space-mission p {
+  font-weight: 700;
+}
+
+.space-mission span {
+  padding: 0.45rem 0;
+  font-weight: 300;
+}
+
+.space-mission>*:not(.image-container) {
+  background-color: #fff;
+}
