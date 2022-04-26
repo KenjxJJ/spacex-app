@@ -1,5 +1,5 @@
-import FilterComponent from "./filter";
-import SpaceXmissionComponent from "./spaceXmission";
+import FilterComponent from "../comp/filter";
+import SpaceXmissionComponent from "../comp/spaceXmission";
 
 export default function Home({missionsData}) {
   return (
